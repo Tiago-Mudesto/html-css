@@ -1,0 +1,100 @@
+@charset "UTF-8";       /**compativel com acentuação**/
+
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap'); /*importar uma fonte externa (Google Fontes)*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+
+/*Identificando seletores personalizados em CSS3
+        # - ID
+        . - CLASS
+        : - PSEUDO-CLASS
+        :: - PSEUDO-ELEMENTS
+        > - CHILDREN
+    */
+h1{
+    color: aliceblue;
+    font-family: 'Lugrasimo', cursive;
+    background-color: rgba(10, 110, 43, 0.603);
+    text-align: center;                                 /*centralza o texto*/
+    border: 10px;                                       /*largura da borda*/
+    border-style: solid;                                /*estilo da borda*/
+    border-color: rgba(172, 255, 47, 0.753);          /*cor da borda*/
+   /* text-decoration: underline; coloca sublinmhado no texto*/    
+}
+nav{
+    padding: 2px;
+    width: 600px;
+    background-color: lightgray;
+}
+a{
+    background-color: rgba(0, 128, 0, 0.315);       /*cor de fundo dos links*/  
+}
+h1#principal{                           /* utiliza se a # para identificar o id criado na tag HTML para realizar estilos especificos para que nao se repliquem a mesmas tags */ 
+    color: green;
+    background-color: greenyellow;
+    font-size: 2em;
+    text-decoration: underline;
+    border: 10px;                                      
+    border-style: solid;                                
+    border-color: rgba(10, 110, 43, 0.603); 
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 255, 202), rgb(93, 150, 40));                   /*cor de fundo da pagina da bagina degrade usando o parametro linear-gradiente indicando a direção e as cores do degrade */
+    font-family: 'DM Mono','Arial', monospace;                                                                                     /*Familia/Tipo da fonte */      
+    text-align: justify;                                                                                                           /*realiza alinhamento de textos*/
+    font-size: 1.5em;                                                                                                               /*tamanho da fonte em pixels (pode ser utilizada a medida pixel (px) ou a medida "em" que corresponde aproximadamente a 16px, ou seja 1em = 16px). 16px ou 1em geralmente é o tamanho padrão utilizado pelos navegadores*/
+}
+
+p#escudo{
+    text-align: center;
+}
+
+.hino{      /*todas as tags com a class "hino" herdaram este mesmo estilo, utiliza se o "." para identificar uma class*/
+    text-align: center;
+}
+.link:hover{                /*parametros dentro da pseudo-class hover serão aplicados ao passar o mouse sobre a tag indicada pole seletor .link*/
+    color: rgb(11, 99, 11);
+    background-color: greenyellow;
+    
+}
+.link:visited{              /*parametros dentro da pseudo-class visited serão aplicadas caso este link já tenha sido visitado*/
+    color: rgb(252, 5, 5);
+}
+.link:active{               /*parametros dentro da pseudo-class active aplicados no momento do click do mouse*/
+    color: white;
+    background-color: green;
+}
+img{
+    margin: 15px;
+    border: 10px;
+    border-style: solid;
+    border-color: rgba(172, 255, 47, 0.788);
+    border-radius: 8px;     /*arredondamento da borda*/
+    outline-width: 10px;    /*outline - contorno por fora da borda*/
+    outline-style: solid;
+    outline-color: rgba(0, 128, 0, 0.788);
+   /* padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    configurações de padding criam espaçamento dentro da borda*/
+}
+dl{
+    text-align: center;
+    width: 500px;
+    border: 15px;
+    border-style: solid;
+    border-color: rgba(0, 128, 0, 0.788);
+    border-radius: 10px;
+    box-shadow: 5px, 3px, 7px, 5px, rgba(0, 0, 0, 0.356);
+}
+.toti{
+    width: 950px;           
+    text-align: center;
+    margin: auto;
+    border: 15px;
+    border-style: solid;
+    border-color: rgba(0, 128, 0, 0.788);
+    border-radius: 10px;
+}
+

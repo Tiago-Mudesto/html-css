@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">     <!--Adiciona icone no titulo do site (link favicon)-->
+    <title>Criando página</title>
+    <link rel="stylesheet" href="style.css"> <!--esta tag link feita para criar um arquivo CSS de estilo independente  do arquivo HTML, no qual pode se usar para esditar estilo de varias paginas com apenas um arquivo, porém pode se criar a tag style no proprio documento HTML para criar estilos especificos para cada pagina caso necessário e criar tags style no corpo do HTML para estilos pontuais em paragrafos ou tilos especificos, etc.-->
+
+    <style>
+        mark{
+           background-color: rgba(0, 100, 0, 0.603); /*Alterando a cor de fundo da tag mark*/
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Olá, Mundo!!!</h1>          <!-- h1 criação de titulos (existe uma hierarquia de titulos, h1, h2, g3, etc). Parametro id cria uma identificação para esta tag h1 especifica-->
+                                                   <!--tag hr cria uma linha de separação na horizontal    -->
+        <p><abbr title="Sociedade Esportiva Palmeiras"><a href="https://www.palmeiras.com.br/" target="_blank" rel="external">SEP</a></abbr></p>       
+        <!--tag abbr, serve para explicar o sifnificado de alguma sigla ou abreviação utilizada em um texto - ajuda nos mecanismos de busca-->
+        <!--tag a (ancora) para criar hiperlinks em determinado texto (parametro href se insere o link para onde será redirecionado. DICA: em cass de links externos recomenda se colocar o parametro target="_blank" rel="external") para abrir em uma nova guia e manter a a navegação em seu site-->
+        <nav>   <!--tag nav para criação de menus-->
+        <a href="história.html" rel="next" class="link">História do Palmeiras</a>
+        <a href="#"rel="next" class="link">Pagina 03</a>
+        <a href="#"rel="next" class="link">Pagina 04</a>
+        <!--Link interno (caso esteja em uma pasta criada dentro do mesmo diretorio utiliza a / para acessar ou se estiver em um diretorio anterior utiliza se ../ para     voltar a um diretorio anterior). Parametro rel="next" para indicar o avancço a uma proxima pagina-->
+        </nav>
+    </header>  
+    <hr>  
+    <p id="escudo"> <img src="palestra-italia.png" alt="Palmeiras"></p>                    <!--Pode se usar a tag picture para se trabalhar com imagens-->
+
+    <h1><q>Explicar a emoção de ser palmeirense a um palmeirense é desnecessário, <br>e a quem não é palmeirense é impossivel.</q> - <small>Joelmir Beting</small></h1>      <!--tag q inclui aspas no trecho envelopado pela tag para dar o sentido de citação-->
+                                                                     <!--Usa se tbm a tag blockquote para fazer citações maiores (blocos de citações) e adicionar referencias as citações com o parametro cite - sintaxe <blockquote cite="referencia_citação">-->
+                                                                     <!--tag small para deixar as letras sutilmente menores-->                
+      
+    <section>                                                                    
+        <h2 class="hino">Hino da Sociedade Esportiva Palmeiras</h2>                <!--cria se o parametro class para adicionar estilos iguais em mais de uma tag com o mesmo parametro-->               
+        <p class="hino"><strong>Quando surge o Alviverde imponente <br>            <!--p criação de paragrafos (strong letras em negrito)-->
+            No gramado em que a luta o aguarda <br>                                <!--tag br criar uma quebra de linha-->
+            Sabe bem o que vem pela frente <br>
+            Que a dureza do prélio não tarda <br><br>                              <!--ATENÇÃO não usar dois ou mais <br> para pular mais de uma linha, para isso utilizar CSS-->
+            
+            E o Palmeiras no ardor da partida <br>
+            Transformando a lealdade em padrão <br>
+            Sabe sempre levar de vencida <br>
+            E mostrar que de fato é campeão <br><br>
+            
+            Defesa que ninguém passa <br>
+            Linha atacante de raça <br>
+            Torcida que canta e vibra (2x) <br><br>
+            
+            Por nosso Alviverde inteiro <br>
+            Que sabe ser brasileiro <br>
+            Ostentando a sua fibra</strong>
+        </p>
+        </section>
+
+        <h1 > <mark style="color: rgb(255, 255, 255);">Elenco titular do time em 2023</mark> </h1> <!--tag mark para marcar um texto e criado um estilo para alterar a cor da fonte apenas deste h1 (CSS aline) -->
+        <p><strong> Elenco completo</strong></p> <br>
+        <p><img src="imagens-elenco/elenco-palmeiras-completo.jpg" alt="Eleco Palmeiras  Supercopa 2023"></p>
+        
+        <h2>Jogadores titulares</h2>
+
+        <p id="elenco">
+            <abbr title="Weverton"><img src="imagens-elenco/weverton.jpeg" alt="Weverton Goleiro"></abbr> <abbr title="Mayke"><img src="imagens-elenco/mayke.jpeg" alt="Mayke Lateral"></abbr> <abbr title="Gomez"><img src="imagens-elenco/gomez.jpeg" alt="Gustavo Gomes Zageiro"></abbr> <abbr title="Murilo"><img src="imagens-elenco/murilo.jpeg" alt="Murilo Zageiro"></abbr> <abbr title="Piquerez"><img src="imagens-elenco/piquerez.jpeg" alt="Piquerez Lateral"></abbr> <abbr title="Menino"><img src="imagens-elenco/g-menino.jpeg" alt="Menino Meia"></abbr> <abbr title="Zé Rafael"><br><img src="imagens-elenco/ze-rafael.jpeg" alt="Zé Meia"></abbr> <abbr title="Raphael Veiga"><img src="imagens-elenco/r-veiga.jpeg" alt="Veiga Meia"></abbr> <abbr title="Rony"><img src="imagens-elenco/rony.jpeg" alt="Rony Atacante"></abbr> <abbr title="Dudu"><img src="imagens-elenco/dudu.jpeg" alt="Dudu Atacante"></abbr> <abbr title="Endrick"><img src="imagens-elenco/endrick.jpeg" alt="Endrick Atacante"></abbr> <abbr title="Abel Ferreira"><img src="imagens-elenco/abel.jpg" alt="Abel Treinador"></abbr>    <!--tag abbr ao passar o mouse sobre a imagem aparece o texto explicando o conteudo da imagem-->
+            <!--Tag &nbsp para adicionar espaçamentos horizontal (entre as palavras)-->
+        </p>
+        <dl>Nome e posições dos jogarores            <!--Tag dl para criar lista de definição-->
+        <hr>
+            <dt>Weverton</dt>                            <!--Tag dt drfini-se o termo da lista -->
+            <dd>Goleiro</dd> <br>                    <!--Seguido da tag dd qie faz a definição do termo  criado-->   
+        <dt>Mayke</dt>
+            <dd>Lateral</dd> <br>
+        <dt>gomez</dt>
+            <dd>Zagueiro</dd> <br>
+        <dt>Murilo</dt>
+            <dd>Zagueiro</dd> <br>
+        <dt>Piquerez</dt>
+            <dd>Lateral</dd> <br>
+        <dt>Menino</dt>
+            <dd>Meio Campista</dd> <br>
+        <dt>Zé Rafael</dt>
+            <dd>Meio Campista</dd> <br>
+        <dt>Raphael Veiga</dt>
+            <dd>Meio Campista</dd> <br>
+        <dt>Dudu</dt>
+            <dd>Atacante</dd> <br>
+        <dt>Rony</dt>
+            <dd>Atacante</dd> <br>
+        <dt>Endrick</dt>
+            <dd>Atacante</dd> <br>
+        <dt>Abel Ferrerira</dt>
+            <dd>Treinador</dd> <br>
+        </dl>
+
+        <section class="toti">
+            <h1>Principais torneios que disputa</h1>
+            <ol type="1" start="1">     <!--Tag OL para criar listas ordenadas (ao adicionar algum item no meio da lista ela redaz a ordenação) parametro Type para definir o indice (numérico ou alfabetico) e parametro start para definir o inicio da lista-->
+                <li>Campeonato brasileiro</li>      <!--tag LI define cada item da lista (fechamento da tag </li> opcional a partir do HTML5)-->
+                <li>Copa do Brasil</li>
+                <li>Campeonato Paulista</li>
+                <li>Libertadores</li>
+            </ol>
+        </section>
+        <section class="toti">
+            <h1>Pricipais titulos</h1>
+            <ul type="square">      <!--tag UL para criação de listas não ordenadas (types disponiveis: disc, circle, square)-->
+                <li>12 titulos de Campeonatos Brasileiros</li>
+                <li>4 titulos de Copas do Brasil</li>
+                <li>25 titulos de Campeonato Paulista</li>
+                <li>3 titulos de Libertadores</li>
+            </ul>
+        </section>                        <!--PODEMOS CRIAR LISTAS ORDENADAS JUNTO COM LISTAS NAO ORDENADAS E VICE E VERSA-->
+
+      
+</body>
+</html>
