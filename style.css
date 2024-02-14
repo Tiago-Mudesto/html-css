@@ -14,16 +14,17 @@ h1{
     color: aliceblue;
     font-family: 'Lugrasimo', cursive;
     background-color: rgba(10, 110, 43, 0.603);
-    text-align: center;                                 /*centralza o texto*/
+    text-align: center;                               /*centralza o texto*/
     border: 10px;                                       /*largura da borda*/
     border-style: solid;                                /*estilo da borda*/
     border-color: rgba(172, 255, 47, 0.753);          /*cor da borda*/
    /* text-decoration: underline; coloca sublinmhado no texto*/    
 }
 nav{
+    color: white;
     padding: 2px;
     width: 600px;
-    background-color: lightgray;
+    background-color: rgb(172, 255, 47);
 }
 a{
     background-color: rgba(0, 128, 0, 0.315);       /*cor de fundo dos links*/  
@@ -39,7 +40,17 @@ h1#principal{                           /* utiliza se a # para identificar o id 
 }
 
 body{
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 255, 202), rgb(93, 150, 40));                   /*cor de fundo da pagina da bagina degrade usando o parametro linear-gradiente indicando a direção e as cores do degrade */
+    color: green;
+    height: 100vh;
+    background-color: rgba(89, 162, 89, 0.46);
+    /*background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(228, 255, 202), rgb(93, 150, 40));                   cor de fundo da pagina da bagina degrade usando o parametro linear-gradiente indicando a direção e as cores do degrade */
+    background-image: url(palmeiras-fundo.jpg);
+    background-size: 100px;
+    background-repeat: repeat;
+    background-position: center, center;
+    background-attachment: fixed;       /*mantem o baxkground do site fixo, ou seja nao rola junto como conteudo*/
+    /*pode se usar uma shorthand para definições de background, utilizando os parametros na seguinte ordem: color>image>position>repeat>size>attachment */
+
     font-family: 'DM Mono','Arial', monospace;                                                                                     /*Familia/Tipo da fonte */      
     text-align: justify;                                                                                                           /*realiza alinhamento de textos*/
     font-size: 1.5em;                                                                                                               /*tamanho da fonte em pixels (pode ser utilizada a medida pixel (px) ou a medida "em" que corresponde aproximadamente a 16px, ou seja 1em = 16px). 16px ou 1em geralmente é o tamanho padrão utilizado pelos navegadores*/
@@ -50,8 +61,20 @@ p#escudo{
 }
 
 .hino{      /*todas as tags com a class "hino" herdaram este mesmo estilo, utiliza se o "." para identificar uma class*/
+    color: green;
+    margin: auto;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.899);
+    width: 950px;
+    border: 10px;
+    border-style: solid;
+    border-color: rgba(172, 255, 47, 0.788);
+    border-radius: 8px;     /*arredondamento da borda*/
+    outline-width: 10px;    /*outline - contorno por fora da borda*/
+    outline-style: solid;
+    outline-color: rgba(0, 128, 0, 0.788);
 }
+
 .link:hover{                /*parametros dentro da pseudo-class hover serão aplicados ao passar o mouse sobre a tag indicada pole seletor .link*/
     color: rgb(11, 99, 11);
     background-color: greenyellow;
@@ -64,8 +87,12 @@ p#escudo{
     color: white;
     background-color: green;
 }
+p#elenco{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 35px;
+}
 img{
-    margin: 15px;
     border: 10px;
     border-style: solid;
     border-color: rgba(172, 255, 47, 0.788);
@@ -79,7 +106,10 @@ img{
     padding-left: 15px;
     configurações de padding criam espaçamento dentro da borda*/
 }
-dl{
+dl#nomes{
+    color: green;
+    background-color: rgba(255, 255, 255, 0.899);
+    margin: auto;
     text-align: center;
     width: 500px;
     border: 15px;
@@ -89,6 +119,8 @@ dl{
     box-shadow: 5px, 3px, 7px, 5px, rgba(0, 0, 0, 0.356);
 }
 .toti{
+    color: green;
+    background-color: rgba(255, 255, 255, 0.899);
     width: 950px;           
     text-align: center;
     margin: auto;
@@ -98,3 +130,28 @@ dl{
     border-radius: 10px;
 }
 
+p#hst{
+    color: green;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.899);
+    width: 950px;
+    border: 10px;
+    border-style: solid;
+    border-color: rgba(172, 255, 47, 0.788);
+    border-radius: 8px;     
+    outline-width: 10px;    
+    outline-style: solid;
+    outline-color: rgba(0, 128, 0, 0.788);
+}
+
+h2{
+    color: aliceblue;
+    font-family: 'Lugrasimo', cursive;
+    background-color: rgba(10, 110, 43, 0.603);
+    text-align: center;    
+    width: 950px;                             
+    border: 10px;                                       
+    border-style: solid;                                
+    border-color: rgba(172, 255, 47, 0.753);       
+}
