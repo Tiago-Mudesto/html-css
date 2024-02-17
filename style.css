@@ -20,15 +20,13 @@ h1{
     border-color: rgba(172, 255, 47, 0.753);          /*cor da borda*/
    /* text-decoration: underline; coloca sublinmhado no texto*/    
 }
-nav{
+nav a{
     color: white;
-    padding: 2px;
+    padding: 10px;
     width: 600px;
-    background-color: rgb(172, 255, 47);
+    background-color: rgba(10, 110, 43, 0.861);      /*Cor de fundo dos links*/
 }
-a{
-    background-color: rgba(0, 128, 0, 0.315);       /*cor de fundo dos links*/  
-}
+
 h1#principal{                           /* utiliza se a # para identificar o id criado na tag HTML para realizar estilos especificos para que nao se repliquem a mesmas tags */ 
     color: green;
     background-color: greenyellow;
